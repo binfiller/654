@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    <div class="topnav">
+        <a class="active" href="#home">Home</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+      </div>
+      <div class="dropdown">
+            <h1>Do I Need a Jacket?</h1>
+
+            <h2>Please select a United States capitol city to see the currrent weather.</h2>
+  
+    
+            <select id="location" name="location" required="" list="location">
+              <option value="" disabled selected>Select your option</option>
+              <option value="Albany">Albany, NY</option>
+              <option value= "Annapolis"> Annapolis, MD</option>
+              <option value= "Augusta"> Augusta, ME</option>
+              <option value= "Austin"> Austin, TX</option>
+              <option value= "Baton Rouge"> Baton Rouge, LA</option>
+              <option value= "Bismarck"> Bismarck, ND</option>
+              <option value= "Boston"> Boston, MA</option>
+              <option value= "Carson City"> Carson City, NV</option>
+              <option value= "Charleston"> Charleston, WV</option>
+              <option value= "Cheyenne"> Cheyenne, WY</option>
+              <option value= "Columbia"> Columbia, SC</option>
+              <option value= "Columbus"> Columbus, OH</option>
+              <option value= "Concord"> Concord, NH</option>
+              <option value= "Des Moines"> Des Moines, IA</option>
+              <option value= "Frankfort"> Frankfort, KY</option>
+              <option value= "Harrisburg"> Harrisburg, PA</option>
+              <option value= "Helena"> Helena, MT</option>
+              <option value= "Jackson"> Jackson, MS</option>
+              <option value= "Jefferson City"> Jefferson City, MO</option>
+              <option value= "Lansing"> Lansing, MI</option>
+              <option value= "Lincoln"> Lincoln, NE</option>
+              <option value= "Madison"> Madison, WI</option>
+              <option value= "Montpelier"> Montpelier, VT</option>
+              <option value= "Nashville"> Nashville, TN</option>
+              <option value= "Oklahoma City"> Oklahoma City, OK</option>
+              <option value= "Olympia"> Olympia, WA</option>
+              <option value= "Pierre"> Pierre, SD</option>
+              <option value= "Providence"> Providence, RI</option>
+              <option value= "Raleigh"> Raleigh, NC</option>
+              <option value= "Richmond"> Richmond, VA</option>
+              <option value= "Saint Paul"> Saint Paul, MN</option>
+              <option value= "Salem"> Salem, OR</option>
+              <option value= "Salt Lake City"> Salt Lake City, UT</option>
+              <option value= "Santa Fe"> Santa Fe, NM</option>
+              <option value= "Topeka"> Topeka, KS</option>
+              <option value= "Trenton"> Trenton, NJ</option>
+            </select>
+        <h2>Want to see another city? You can type one in below!</h2>
+        <h3>This tool relies on a database, so your search should follow these guidelines:</h3>
+        <h3>City, Country Code, for example: "Berlin, DE"</h3>
+
+      </div>
+      <div id="enterCity"><input type="text" id="location" name="location" required="" size="20">
+            <button type="button" id="submit" onclick="onClickSubmit()">Submit</button>
+        </div>
+
+      <div class="section group">
+        <div class="col span_1_of_3">
+            <h1>Do I Need a Jacket?</h1>
+            
+            
+            <div>
+            
+              Feels like: <span id="feels_like"></span> <br>
+              Do I Need a Jacket? <span id="needjacket"></span> <br>
+            <img id=jacketImage src=""/>
+            </div>
+        </div>
+        <div class="col span_1_of_3">
+                <h1>Do I Need an Umbrella?</h1>
+            <div>
+    
+                Weather: <span id="weather"></span> <br>
+                Do I Need An Umbrella? <span id="needumbrella"></span> <br>
+              
+              </div>
+        </div>
+        <div class="col span_1_of_3">
+        <h1>The current temperature is:</h1>
+        <p id="currentTemp"></p>
+        </div>
+    </div>
+</body>
+<footer>
+
+
+</footer>
+</html>
